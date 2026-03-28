@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PING - Coming Soon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <section class="top-section" aria-label="Coming soon message">
+            <h1>ping<span aria-hidden="true">.</span></h1>
+            <h2>We are launching <span>soon</span>!</h2>
+            <p>Subscribe and get notified when we launch.</p>
+        </section>
+
+        <form class="email-section" id="subscribe-form" novalidate>
+            <label for="email" class="visually-hidden">Email address</label>
+            <input type="email" id="email" name="email" placeholder="Your email address..." required>
+            <button type="submit">Notify Me</button>
+            <p id="message" class="form-message" aria-live="polite"></p>
+        </form>
+
+        <img src="illustration-dashboard.png" alt="Dashboard illustration" class="dashboard-img">
+
+        <nav class="links" aria-label="Social media links">
+            <a href="#" aria-label="Follow on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Follow on Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="Follow on Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </nav>
+
+        <footer>
+            &copy; 2026 Ping. All rights reserved.
+        </footer>
+    </main>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+    <script src="script.js"></script>
+</body>
+</html>
